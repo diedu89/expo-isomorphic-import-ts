@@ -55,7 +55,8 @@ const webImplementation: IntercomType = {
     eventName: string,
     metaData?: MetaData
   ): Promise<boolean> {
-    throw new Error("Function not implemented.");
+    console.log(eventName);
+    return Promise.resolve(true);
   },
   logout: function (): Promise<boolean> {
     throw new Error("Function not implemented.");
